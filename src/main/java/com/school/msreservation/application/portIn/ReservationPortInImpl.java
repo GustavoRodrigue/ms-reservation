@@ -10,7 +10,6 @@ import com.school.msreservation.domain.enuns.UserEnum;
 
 import com.school.msreservation.infrastructure.adapter.adapterOut.RegisteredStudentAdapterOut;
 import com.school.msreservation.infrastructure.adapter.adapterOut.QuantityCourseMatriculationAdapterOut;
-import com.escola.msreserva.infrastructure.dto.*;
 import com.school.msreservation.infrastructure.dto.*;
 import org.modelmapper.ModelMapper;
 
@@ -40,7 +39,6 @@ public class ReservationPortInImpl implements ReservationPortIn {
 
         CourseResponseDto courseResponseDto = coursePortOut.listCourseId(reservationRequestDto.getCourseId());
         Course course = modelMapper.map(courseResponseDto, Course.class);
-
 
         UserResponseDto studentDto = userPortOut.listUserId(reservationRequestDto.getStudentId());
         User student = modelMapper.map(studentDto, User.class);

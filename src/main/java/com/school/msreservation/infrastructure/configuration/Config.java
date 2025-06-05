@@ -1,8 +1,6 @@
 package com.school.msreservation.infrastructure.configuration;
 
 import com.school.msreservation.application.portIn.ReservationPortInImpl;
-import com.escola.msreserva.application.portOut.*;
-import com.escola.msreserva.infrastructure.adapter.adapterOut.*;
 import com.school.msreservation.application.portOut.*;
 import com.school.msreservation.infrastructure.adapter.adapterOut.*;
 import org.modelmapper.ModelMapper;

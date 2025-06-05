@@ -17,7 +17,6 @@ public class ReservationController {
 
     @PostMapping()
     public void createReservation(@RequestBody ReservationRequestDto reservaRequestDto){
-
         reservaPortIn.createReservation(reservaRequestDto);
     }
 

@@ -12,11 +12,11 @@ public class Course {
 
     }
 
-    public Course(short capacity, String description, String name, UUID id) {
-        this.capacity = capacity;
-        this.description = description;
-        this.name = name;
+    public Course(UUID id, String name, String description, int capacity) {
         this.id = id;
+        this.name = name;
+        this.description = description;
+        this.capacity = capacity;
     }
 
     public UUID getId() {
